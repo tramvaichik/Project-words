@@ -1,0 +1,246 @@
+@import 'https://fonts.googleapis.com/css2? family = Lobster & display = swap';
+@import 'https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&display=swap';
+@import '../styles/variables.scss';
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 15px 0;
+}
+
+.table_header {
+    background: $backgroundHead;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_rus,
+.header_en,
+.header_tr,
+.header_tag {
+    font-family: 'Lobster', cursive;
+    color: $h2Color;
+    text-align: center;
+    font-weight: $weight;
+    font-size: 1.8em;
+    text-shadow: 0px 2px 2px rgb(0, 204, 255);
+}
+
+.head {
+    border-bottom: none;
+}
+
+input {
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    color: $inColor;
+    background: transparent;
+    width: 6vw;
+    padding: 5px;
+    font-weight: $weight;
+    border: none;
+}
+
+td {
+    color: $tdColor;
+    width: 11vw;
+    padding: 5px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .table {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        padding: 0;
+    }
+
+    .header_rus,
+    .header_en,
+    .header_tr {
+        font-size: 2em;
+        font-family: 'Lobster', cursive;
+        color: $h2Color;
+        text-align: center;
+        font-weight: $weight;
+        text-shadow: 0px 2px 2px rgb(0, 204, 255);
+    }
+
+    input {
+        font-size: 1.4em;
+        font-family: 'Times New Roman', Times, serif;
+        color: $inColor;
+        background: transparent;
+        width: 15vw;
+        padding: 5px;
+        font-weight: $weight;
+        border: none;
+    }
+
+    td {
+        color: $tdColor;
+        width: 13vw;
+        padding: 5px;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+
+    .table {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .header_rus,
+    .header_en,
+    .header_tr,
+    .header_tag {
+        font-family: 'Lobster', cursive;
+        color: $h2Color;
+        text-align: center;
+        font-weight: $weight;
+        text-shadow: 0px 2px 2px rgb(0, 204, 255);
+    }
+
+    .head {
+        border-bottom: none;
+    }
+
+    input {
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        color: $inColor;
+        background: transparent;
+        width: 15vw;
+        padding: 5px;
+        font-weight: $weight;
+        border: none;
+    }
+
+    td {
+        color: $tdColor;
+        width: 14vw;
+        padding: 5px;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 499px) {
+    .table {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .header_rus,
+    .header_en,
+    .header_tr,
+    .header_tag {
+        font-family: 'Lobster', cursive;
+        color: $h2Color;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+        text-shadow: 0px 2px 2px rgb(0, 204, 255);
+    }
+
+
+    input {
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        color: $inColor;
+        background: transparent;
+        width: 12vw;
+        padding: 15px;
+        font-weight: $weight;
+        border: none;
+    }
+
+    td {
+        padding: 4px;
+        color: $tdColor;
+        width: 9vw;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .table {
+        display: grid;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .header_rus,
+    .header_en,
+    .header_tr,
+    .header_tag {
+        font-family: 'Lobster', cursive;
+        color: $h2Color;
+        text-align: center;
+        font-weight: normal;
+        font-size: 1em;
+        text-shadow: 0px 2px 2px rgb(0, 204, 255);
+    }
+
+
+    input {
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        color: $inColor;
+        background: transparent;
+        width: 10vw;
+        padding: 15px;
+        font-weight: $weight;
+        border: none;
+    }
+
+    td {
+        padding: 3px;
+        color: $tdColor;
+        width: 5vw;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+}
+
+.table_btn {
+    border: 1px solid rgb(0, 0, 139);
+    border-radius: 10px;
+    color: $btnColor;
+    font-weight: $weight;
+    background: transparent;
+
+    &:hover {
+        color: $btnHover;
+        box-shadow: 0 0 40px 40px #6000a0 inset;
+    }
+
+    &:active {
+        color: $btnActiv;
+        background-color: rgb(55, 0, 158);
+        box-shadow: 2px 3px 2px #108b62;
+        top: 3px;
+    }
+}
+
+.table_btn_ds {
+    background: #808080;
+    border-radius: 10px;
+    font-weight: $weight;
+    background: transparent;
+}
+
+.empty-input {
+    border: 2px solid rgb(255, 0, 0);
+}

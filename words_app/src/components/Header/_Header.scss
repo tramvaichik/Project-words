@@ -1,0 +1,200 @@
+@import '../styles/variables.scss';
+
+.app_header {
+    display: grid;
+    background: $backrouhdMain;
+    height: 14vh;
+}
+
+.app_nav {
+    display: flex;
+    align-items: center;
+}
+
+.app_img {
+    width: 6vw;
+    margin: 10px;
+}
+
+.app_items {
+    width: 50%;
+}
+
+.app_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.app_link {
+    color: #000850;
+    list-style-type: none;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.app_a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+
+    &:link {
+        color: #14003a;
+    }
+
+    &:visited {
+        color: #000850;
+    }
+
+    &:focus {
+        border-bottom: 1px solid;
+        box-shadow: 0 2px 2px rgb(0, 0, 139);
+    }
+
+    &:hover {
+        box-shadow: 1px 3px 3px #00916c;
+    }
+
+    &:active {
+        background: transparent;
+        color: #860101;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .app_img {
+        animation: app_img-spin infinite 70s linear;
+    }
+}
+
+@keyframes app_img-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .app_header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $backrouhdMain;
+        height: 14vh;
+    }
+
+    .app_nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .app_img {
+        display: none;
+    }
+
+    .app_list {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .app_link {
+        margin: 0 0 0 10px;
+        color: #000850;
+        list-style-type: none;
+        font-size: 3em;
+        font-weight: 700;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    }
+
+}
+
+@media screen and (min-width: 361px) and (max-width: 499px) {
+    .app_header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .app_nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .app_img {
+        display: none;
+    }
+
+    .app_list {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+
+    .app_link {
+        margin: 10px;
+        color: #000850;
+        list-style-type: none;
+        font-size: 3em;
+        font-weight: 700;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .app_header {
+        display: grid;
+        background: $backrouhdMain;
+        height: 14vh;
+    }
+
+    .app_nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .app_img {
+        width: 8vw;
+        margin: 0;
+    }
+
+    .app_items {
+        width: 50%;
+    }
+
+    .app_list {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .app_link {
+        color: #000850;
+        list-style-type: none;
+        font-size: 3em;
+        font-weight: 700;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .app_img {
+        width: 7vw;
+        margin: 10px;
+    }
+
+    .app_link {
+        color: #000850;
+        list-style-type: none;
+        font-size: 3em;
+        font-weight: 700;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    }
+}

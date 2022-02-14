@@ -1,0 +1,15 @@
+@import 'https://fonts.googleapis.com/css2? family = Lobster & display = swap';
+@import 'https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&display=swap';
+@import './components/Table/_Table.scss';
+@import './components/Error/Error';
+@import './components/Header/Header';
+@import './components/Footer/Footer';
+@import './components/Cards/Card';
+
+
+.App {
+  display: flex;
+  height: 35vh;
+  flex-direction: column;
+  margin: 12px;
+}

@@ -1,0 +1,570 @@
+@import '../styles/variables.scss';
+
+.coup {
+    display: grid;
+}
+
+.coup_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coup_btn {
+    display: flex;
+    padding: 10px;
+}
+
+.coup_button {
+    border: 1px solid rgb(139, 44, 0);
+    border-radius: 5px;
+    color: rgb(85, 0, 0);
+    font-weight: bolder;
+    background: $backgroundCard;
+    margin: 10px;
+
+    &:hover {
+        color: $colorH;
+        box-shadow: 0 0 40px 40px #fa7435ab inset;
+    }
+
+    &:active {
+        color: $colorA;
+        background-color: rgb(12, 0, 34);
+        box-shadow: 2px 3px 2px #510086;
+        top: 3px;
+    }
+}
+
+.coup_txt {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $colorTr;
+    text-shadow: 0px 2px 2px rgb(255, 136, 0);
+}
+
+.coup_images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.coup_img {
+    width: 13vw;
+    margin: 5px;
+}
+
+.card {
+    height: 39vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border-radius: 13px;
+    margin: 7px;
+    background: $backgroundCard;
+}
+
+.card_txt {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $colorTr;
+    text-shadow: 0px 2px 2px rgb(255, 136, 0);
+    margin: 13px;
+}
+
+.card_word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_en {
+    margin: 5px;
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+    font-weight: $weight;
+    color: $colorEn;
+    text-shadow: 0px 2px 2px rgb(255, 81, 0);
+}
+
+.card_tr {
+    margin: 7px;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: $weight;
+    color: $colorTr;
+    text-shadow: 0px 2px 2px rgb(255, 136, 0);
+}
+
+.card_button {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid rgb(46, 15, 0);
+    border-radius: 5px;
+    color: rgb(85, 0, 0);
+    text-shadow: 0px 2px 2px rgb(255, 60, 0);
+    font-weight: bolder;
+    background: transparent;
+
+    &:hover {
+        color: $colorH;
+        box-shadow: 0 0 40px 40px #e5ff00be inset;
+    }
+
+    &:active {
+        color: $colorA;
+        background-color: rgb(12, 0, 34);
+        box-shadow: 2px 3px 2px #510086;
+        top: 3px;
+    }
+
+    &:focus {
+        border: 2px solid #ff0000;
+    }
+}
+
+.card_russ {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: $colorR;
+    text-shadow: 0px 2px 2px rgba(162, 0, 255);
+
+
+    &:active {
+        color: rgb(252, 204, 116);
+        background-color: rgb(12, 0, 34);
+        box-shadow: 2px 3px 2px #510086;
+        top: 3px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .coup_button {
+        border: 1px solid rgb(139, 44, 0);
+        border-radius: 5px;
+        color: rgb(85, 0, 0);
+        font-weight: bolder;
+        background: $backgroundCard;
+        margin: 10px;
+        font-size: 1.4em;
+
+        &:hover {
+            color: $colorH;
+            box-shadow: 0 0 40px 40px #fa7435ab inset;
+        }
+
+        &:active {
+            color: $colorA;
+            background-color: rgb(12, 0, 34);
+            box-shadow: 2px 3px 2px #510086;
+            top: 3px;
+        }
+    }
+
+    .coup_txt {
+        font-family: Arial, Helvetica, sans-serif;
+        color: $colorTr;
+        font-size: 1.5em;
+        text-shadow: none;
+    }
+
+    .card_txt {
+        font-family: Arial, Helvetica, sans-serif;
+        color: $colorTr;
+        margin: 13px;
+        text-shadow: none;
+    }
+
+    .card_en {
+        margin: 5px;
+        font-size: 1.5em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: $weight;
+        color: $colorEn;
+        text-shadow: none;
+    }
+
+    .card_tr {
+        margin: 7px;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: $weight;
+        color: $colorTr;
+    }
+
+    .card_button {
+        padding: 10px;
+        margin: 5px;
+        border: 2px solid rgb(46, 15, 0);
+        border-radius: 5px;
+        color: rgb(24, 0, 0);
+        background: transparent;
+        font-size: 1.4em;
+        text-shadow: none;
+
+        &:hover {
+            color: $colorH;
+        }
+
+        &:active {
+            color: $colorA;
+            background-color: rgb(12, 0, 34);
+            top: 3px;
+        }
+
+        &:focus {
+            border: 2px solid #ff0000;
+        }
+    }
+
+    .card_russ {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: $colorR;
+        margin: 5px;
+        font-size: 1.8em;
+        text-shadow: none;
+
+
+        &:active {
+            color: rgb(252, 204, 116);
+            background-color: rgb(12, 0, 34);
+            top: 3px;
+        }
+    }
+
+    .coup_img {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        border-radius: 13px;
+        margin: 7px;
+        background: $backgroundCard;
+    }
+
+    .coup_button {
+        border: 1px solid rgb(139, 44, 0);
+        border-radius: 5px;
+        color: rgb(85, 0, 0);
+        font-weight: bolder;
+        background: $backgroundCard;
+        margin: 10px;
+        font-size: 1.6em;
+
+        &:hover {
+            color: $colorH;
+            box-shadow: 0 0 40px 40px #fa7435ab inset;
+        }
+
+        &:active {
+            color: $colorA;
+            background-color: rgb(12, 0, 34);
+            box-shadow: 2px 3px 2px #510086;
+            top: 3px;
+        }
+    }
+
+    .coup_txt {
+        font-family: Arial, Helvetica, sans-serif;
+        color: $colorTr;
+        text-shadow: none;
+    }
+
+    .coup_img {
+        display: none;
+    }
+
+    .card_txt {
+        font-family: Arial, Helvetica, sans-serif;
+        color: $colorTr;
+        text-shadow: none;
+        margin: 13px;
+        font-size: 2em;
+    }
+
+    .card_en {
+        margin: 5px;
+        font-size: 1.5em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: $weight;
+        color: $colorEn;
+        text-shadow: none;
+    }
+
+    .card_tr {
+        margin: 7px;
+        font-size: 1.3em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: $weight;
+        color: $colorTr;
+        text-shadow: none;
+    }
+
+    .card_button {
+        border: 2px solid rgb(46, 15, 0);
+        border-radius: 5px;
+        color: rgb(17, 0, 0);
+        text-shadow: none;
+        font-size: 1.6em;
+        background: transparent;
+
+        &:hover {
+            color: $colorH;
+            box-shadow: 0 0 40px 40px #e5ff00be inset;
+        }
+
+        &:active {
+            color: $colorA;
+            background-color: rgb(12, 0, 34);
+            box-shadow: 2px 3px 2px #510086;
+            top: 3px;
+        }
+
+        &:focus {
+            border: 2px solid #ff0000;
+        }
+    }
+
+    .card_russ {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: $colorR;
+        text-shadow: none;
+        font-size: 2em;
+
+        &:active {
+            color: rgb(252, 204, 116);
+            background-color: rgb(12, 0, 34);
+            box-shadow: 2px 3px 2px #510086;
+            top: 3px;
+        }
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 499px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        border-radius: 13px;
+        margin: 7px;
+        background: $backgroundCard;
+    }
+
+    .coup_button {
+        border: 1px solid rgb(139, 44, 0);
+        border-radius: 5px;
+        color: rgb(85, 0, 0);
+        font-weight: bolder;
+        background: $backgroundCard;
+        margin: 10px;
+        font-size: 1.6em;
+
+        &:hover {
+            color: $colorH;
+            box-shadow: 0 0 40px 40px #fa7435ab inset;
+        }
+
+        &:active {
+            color: $colorA;
+            background-color: rgb(12, 0, 34);
+            box-shadow: 2px 3px 2px #510086;
+            top: 3px;
+        }
+    }
+
+    .coup_txt {
+        font-family: Arial, Helvetica, sans-serif;
+        color: $colorTr;
+        text-shadow: none;
+    }
+
+    .coup_img {
+        display: none;
+    }
+
+    .card_txt {
+        font-family: Arial, Helvetica, sans-serif;
+        color: $colorTr;
+        text-shadow: none;
+        margin: 13px;
+        font-size: 2em;
+    }
+
+    .card_en {
+        margin: 5px;
+        font-size: 1.5em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: $weight;
+        color: $colorEn;
+        text-shadow: none;
+    }
+
+    .card_tr {
+        margin: 7px;
+        font-size: 1.3em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: $weight;
+        color: $colorTr;
+        text-shadow: none;
+    }
+
+    .card_button {
+        border: 2px solid rgb(46, 15, 0);
+        border-radius: 5px;
+        color: rgb(17, 0, 0);
+        text-shadow: none;
+        font-size: 1.6em;
+        background: transparent;
+
+        &:hover {
+            color: $colorH;
+            box-shadow: 0 0 40px 40px #e5ff00be inset;
+        }
+
+        &:active {
+            color: $colorA;
+            background-color: rgb(12, 0, 34);
+            box-shadow: 2px 3px 2px #510086;
+            top: 3px;
+        }
+
+        &:focus {
+            border: 2px solid #ff0000;
+        }
+    }
+
+    .card_russ {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: $colorR;
+        text-shadow: none;
+        font-size: 2em;
+
+        &:active {
+            color: rgb(252, 204, 116);
+            background-color: rgb(12, 0, 34);
+            box-shadow: 2px 3px 2px #510086;
+            top: 3px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        border-radius: 13px;
+        margin: 7px;
+        background: $backgroundCard;
+    }
+
+    .coup_button {
+        border: 1px solid rgb(80, 26, 2);
+        border-radius: 5px;
+        color: rgb(85, 0, 0);
+        font-weight: bolder;
+        background: $backgroundCard;
+        margin: 10px;
+        font-size: 1.6em;
+
+        &:hover {
+            color: $colorH;
+            box-shadow: 0 0 40px 40px #fa7435ab inset;
+        }
+
+        &:active {
+            color: $colorA;
+            background-color: rgb(12, 0, 34);
+            box-shadow: 2px 3px 2px #510086;
+            top: 3px;
+        }
+    }
+
+    .coup_txt {
+        font-family: Arial, Helvetica, sans-serif;
+        color: $colorTr;
+        text-shadow: none;
+    }
+
+    .coup_img {
+        display: none;
+    }
+
+    .card_txt {
+        font-family: Arial, Helvetica, sans-serif;
+        color: $colorTr;
+        text-shadow: none;
+        margin: 13px;
+        font-size: 2em;
+    }
+
+    .card_en {
+        margin: 5px;
+        font-size: 1.5em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: $weight;
+        color: $colorEn;
+        text-shadow: none;
+    }
+
+    .card_tr {
+        margin: 7px;
+        font-size: 1.3em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: $weight;
+        color: $colorTr;
+        text-shadow: none;
+    }
+
+    .card_button {
+        border: 2px solid rgb(46, 15, 0);
+        border-radius: 5px;
+        color: rgb(17, 0, 0);
+        text-shadow: none;
+        font-size: 1.6em;
+        background: transparent;
+
+        &:hover {
+            color: $colorH;
+            box-shadow: 0 0 40px 40px #e5ff00be inset;
+        }
+
+        &:active {
+            color: $colorA;
+            background-color: rgb(12, 0, 34);
+            box-shadow: 2px 3px 2px #510086;
+            top: 3px;
+        }
+
+        &:focus {
+            border: 2px solid #ff0000;
+        }
+    }
+
+    .card_russ {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: $colorR;
+        text-shadow: none;
+        font-size: 2em;
+
+        &:active {
+            color: rgb(252, 204, 116);
+            background-color: rgb(12, 0, 34);
+            box-shadow: 2px 3px 2px #510086;
+            top: 3px;
+        }
+    }
+}

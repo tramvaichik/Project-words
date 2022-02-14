@@ -1,0 +1,29 @@
+@import '../styles/variables.scss';
+
+.load {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background: linear-gradient(to left top, rgb(173, 255, 241), rgb(192, 255, 190), rgb(255, 233, 191), rgb(209, 193, 255));
+    height: 100vh;
+}
+
+.loading {
+    width: 50%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .loading {
+        animation: loading-spin infinite 30s linear;
+    }
+}
+
+@keyframes loading-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
